@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import NavBar from './components/NavBar';
+import Home from './components//Home';
 import './App.css';
 
 class App extends Component {
@@ -9,6 +10,7 @@ class App extends Component {
       <Router>
         <div>
           <NavBar />
+          <Route exact path='/' component={Home} />
         </div>
       </Router>
     );
@@ -16,10 +18,3 @@ class App extends Component {
 }
 
 export default App;
-
-
-<Router>
-  <div>
-    <NavBar />
-  </div>
-</Router>
