@@ -15,6 +15,7 @@ class Form extends Component {
   handleSubmit = e => {
     e.preventDefault()
     console.log('i was clicked')
+    console.log(this.state)
   }
 
   handleChange = e => {
@@ -44,6 +45,7 @@ class Form extends Component {
             <input 
               type='text'
               name='age'
+              onChange={e => this.handleChange(e)}
             />
           </div>
 
@@ -52,6 +54,7 @@ class Form extends Component {
             <input 
               type='text'
               name='location'
+              onChange={e => this.handleChange(e)}
             />
           </div>
 
