@@ -14,6 +14,7 @@ class Form extends Component {
 
   handleSubmit = e => {
     e.preventDefault()
+    console.log('i was clicked')
   }
 
   handleChange = e => {
@@ -52,6 +53,10 @@ class Form extends Component {
               type='text'
               name='location'
             />
+          </div>
+
+          <div>
+            <button type="submit">Submit</button>
           </div>
 
         </div>
